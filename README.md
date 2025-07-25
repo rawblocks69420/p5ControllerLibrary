@@ -14,7 +14,7 @@ it is It is necessary to insert p5.controller.js in your html:
   <script src="p5.controller.js"></script>
   <script src="sketch.js"></script>
 ```
-## usage
+## Usage
 ```javascript
 var controller;
 
