@@ -14,8 +14,38 @@ it is It is necessary to insert p5.controller.js in your html:
   <script src="p5.controller.js"></script>
   <script src="sketch.js"></script>
 ```
-# usage
+## usage
+```javascript
+var controller;
 
+function setup() {
+  createCanvas(window.innerWidth, window.innerHeight);
+
+  controller = createJoystick();
+
+  joystick.onButtonPressed(onJoystick);
+  joystick.onButtonReleased(onJoystick);
+  joystick.onAxesPressed(onJoystick);
+  joystick.onAxesReleased(onJoystick);
+}
+
+function draw(){
+  background(100);
+  joystick.draw(width/2, height/2);
+
+  //doesn't run game code if in calibration mode
+  
+  if(joystick.controllersNotCalibrated().length > 0) {
+    joystick.calibrate(true);
+    return
+  }
+  // gamecode below...
+}
+
+function onJoystick(e) {
+  console.log("onJoystick", e);
+}
+```
 
 ## License
 
