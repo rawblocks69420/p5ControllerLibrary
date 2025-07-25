@@ -1,9 +1,7 @@
 //Code originally by vamos
 //edited my rawblock69420
 
-
-
-p5.prototype.createJoystick = function(debug) {
+p5.prototype.createController = function(debug) {
 	var _this = {
 		name: "p5Joystick"
 	};
@@ -16,7 +14,6 @@ p5.prototype.createJoystick = function(debug) {
 	var controllers = {};
 
     var currentSelectedController;
-
 
 	/*
 	Event listeners
