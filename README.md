@@ -1,6 +1,5 @@
 # p5ControllerLibrary
-Calibrates multiple unique controllers connected to your computer using the p5 library. 
-A modified and extended version of the excellent p5.joystick library, providing enhanced features and compatibility.
+Calibrates multiple unique controllers connected to your computer using the p5 library. This is a modified and extended version of the p5.joystick library, offering additional calibration buttons and a streamlined calibration process that works within the game itself, rather than requiring a separate process.
 
 ## Original Project
 
