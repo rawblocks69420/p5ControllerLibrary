@@ -21,31 +21,36 @@ var controller;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 
-  controller = createJoystick();
+  controller = createController();
 
-  joystick.onButtonPressed(onJoystick);
-  joystick.onButtonReleased(onJoystick);
-  joystick.onAxesPressed(onJoystick);
-  joystick.onAxesReleased(onJoystick);
+  controller.onButtonPressed(onController);
+  controller.onButtonReleased(onController);
+  controller.onAxesPressed(onController);
+  controller.onAxesReleased(onController);
 }
 
 function draw(){
   background(100);
-  joystick.draw(width/2, height/2);
+  controller.draw(width/2, height/2);
 
   //doesn't run game code if in calibration mode
   
-  if(joystick.controllersNotCalibrated().length > 0) {
-    joystick.calibrate(true);
+  if(controller.controllersNotCalibrated().length > 0) {
+    controller.calibrate(true);
     return
   }
   // gamecode below...
 }
 
-function onJoystick(e) {
-  console.log("onJoystick", e);
+function onController(e) {
+  console.log("onController", e);
 }
 ```
+
+## Calibration
+![Alt text](image.png?raw=true "Title")
+
+
 
 ## License
 
