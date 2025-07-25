@@ -6,10 +6,16 @@ A modified and extended version of the excellent p5.joystick library, providing 
 
 This project builds upon the  work of Vamoss and their p5.joystick library. The original project can be found at: Vamoss/p5.joystick.
 
+## Installation
+it is It is necessary to insert p5.controller.js in your html:
+
 ```html
   <script src="js/p5.js"></script>
-  <script src="p5.joystick.js"></script>
+  <script src="p5.controller.js"></script>
   <script src="sketch.js"></script>
+```
+# usage
+
 
 ## License
 
