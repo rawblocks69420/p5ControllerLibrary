@@ -50,7 +50,13 @@ function onController(e) {
 ## Calibration
 ![Alt text](image.png?raw=true "Title")
 
+to calibrate make sure to click the button the screen, and then push the associate button on your controller. When you are finished calibrating click the save button and push any button on your controller to finalize.
 
+If you want to undo your calibrations, open up dev tools and look at application in one of the tabs. There you can see a json file that has your controller data stored. Just delete that and you can recalibrate your controller.
+
+## Methods
+look at this readme to find the methods of the library 
+https://github.com/Vamoss/p5.joystick/blob/main/README.md 
 
 ## License
 
