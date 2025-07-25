@@ -33,7 +33,6 @@ function draw(){
   controller.draw(width/2, height/2);
 
   //doesn't run game code if in calibration mode
-  
   if(controller.controllersNotCalibrated().length > 0) {
     controller.calibrate(true);
     return
